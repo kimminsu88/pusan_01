@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>재보궐 선거</title>
+</head>
+<body>
+  <h1>2010년 4.7 보궐선거</h1>
+  <p></p>
+  <form name="vote" action="vote.jsp" method="get">
+    <fieldset>
+      <legend>개인 정보 입력</legend>
+      <p>이름 : <input type="text" name="name"></p>
+      <p>생년월일 : <input type="date" name="birth"> </p>
+    </fieldset>
+    <h3>시장 선거 투표</h3>
+    선거구 :
+    <select name="address1">
+      <option selected>금정구</option>
+      <option>수영구</option>
+      <option>사하구</option>
+      <option>해운대구</option>
+    </select>
+    <p></p>
+    <input type="radio" name="candidate" value="1">더불어민주당 김영춘
+    <input type="radio" name="candidate" value="2">국민의힘 박형준
+    <input type="radio" name="candidate" value="6">미래당 손상우
+    <input type="radio" name="candidate" value="7">민생당 배준현
+    <input type="radio" name="candidate" value="8">자유민주당 정규재
+    <p></p>
+    <input type="submit" value="확인">
+    <input type="reset" value="다시 작성">
+  </form>
+  
+</body>
+</html>

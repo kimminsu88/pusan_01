@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    h1[text]{
+      color: deeppink;
+      background-color: deepskyblue;
+    }
+    p[text]{
+      color: rgb(20, 255, 79);
+      background-color: rgb(208, 255, 0);
+    }
+    h1[text="attr3"]{
+      color: rgb(71, 20, 255);
+      background-color: rgb(247, 0, 255);
+    }
+  </style>
+</head>
+<body>
+  <h1 text="attr1">text 속성 이름 선택자</h1>
+  <h1 text="attr2">text 속성 이름 선택자</h1>
+  <p text="attr3">text 속성 이름 선택자</p>
+  <h1 text="attr3">text 속성 이름 선택자</h1>
+  <p>속성 선택 없음</p>
+</body>
+</html>
