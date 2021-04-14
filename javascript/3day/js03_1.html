@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script>
+    var day;
+    var week=new Date().getDay();
+    
+    switch(week){
+      case 0:
+          day="일요일"; break;
+      case 1:
+          day="월요일"; break;
+      case 2:
+          day="화요일"; break;
+      case 3:
+          day="수요일"; break;
+      case 4:
+          day="목요일"; break;
+      case 5:
+          day="금요일"; break;
+      case 6:
+          day="토요일"; break;
+      default:
+          day="없는 요일"; break;
+    }
+    console.log("오늘은" + day + "입니다.");
+    console.log("오늘은" + week + "입니다.");
+    console.log("\n----------- else if 문으로 변환 -----------\n");
+    
+    day = ""; //""빈 문자열
+    
+
+    if (week == 1) {
+      day = "월요일";
+    }
+    else if (week == 2) {
+      day = "화요일";
+    }
+    else if (week == 3) {
+      day = "수요일";
+    }
+    else if (week == 4) {
+      day = "목요일";
+    }
+    else if (week == 5) {
+      day = "금요일";
+    }
+    else if (week == 6) {
+      day = "토요일";
+    }
+    else  {
+      day = "일요일";
+    }
+    alert("오늘은" + day + "입니다");
+    console.log("오늘은" + day + "입니다");
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
