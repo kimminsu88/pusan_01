@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    var n = 0;
+    $(document).ready(function () {
+      $("div.out").mouseenter(function () {
+          $("p:first", this).text("마우스 포인트 들어옴");
+          $("p:last",this).text(++n);
+      }); 
+      $("div.out").mouseleave(function (){
+        $("p:first", this).text("마우스 포인트 나감");
+        $("p:last",this).text("최종횟수 : " + n);
+      })
+
+    })
+  </script>
+  <title></title>
+</head>
+
+<body>
+
+</body>
+
+</html>
